@@ -1,0 +1,83 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 92%;
+  padding: 5% 10% 0 9%;
+  justify-content: space-between;
+  background-image: url(/assets/banner-bk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.content {
+  width: 67%;
+  align-self: flex-start;
+}
+
+.content__logo {
+  width: 100px;
+  user-select: none;
+}
+
+.content__slogan {
+  margin: 55px 0 30px 0;
+  font-weight: bold;
+  font-size: 4.8em;
+  color: white;
+}
+
+.content__description {
+  margin: 0 0 60px 0;
+  font-size: 1.5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(208, 208, 208);
+}
+
+.content__button {
+  padding: 15px 35px 15px 35px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 40px;
+  background-color: rgb(24, 255, 178);
+  transition: background-color, color, 0.3s ease;
+}
+
+.content__button:hover {
+  background-color: rgb(18, 190, 133);
+  color: white;
+}
+
+.header__title {
+  align-self: flex-start;
+  cursor: pointer;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.4em;
+  color: rgb(208, 208, 208);
+}
+
+.header__title:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .content__slogan {
+    font-size: 3.8em;
+  }
+}
+
+@media (max-width: 620px) {
+  .content {
+    width: 100%;
+    align-self: flex-start;
+  }
+  .content__slogan {
+    font-size: 2.5em;
+  }
+  .content__description {
+    font-size: 1.3em;
+  }
+}
